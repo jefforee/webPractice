@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | QR code component</title>
 
-  Improve your front-end skills by building projects
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-family: "Outfit", sans-serif;
+        background-color: lightblue;
+        display: flex; /* Use flexbox to center the container */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+        width: 20%; /* Adjust the width as needed */
+        max-width: 400px; /* Set a maximum width */
+        height: auto;
+        /* width: 50%; */
+        /* height: auto; */
+      }
+      .code-container img {
+        width: 100%; /* Make the image scale to the width of its container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners */
+      }
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+      }
+      h1 {
+        margin: 5px;
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        font-weight: 700;
+        font-size: 1.5vw;
+        word-wrap: break-word; /* Allows long words to break and wrap onto the next line */
+        overflow-wrap: break-word;
+      }
+      p {
+        margin: 5px;
+        color: gray;
+        font-weight: 400;
+        font-size: 1.25vw;
+        word-wrap: break-word; /* Allows long words to break and wrap onto the next line */
+        overflow-wrap: break-word;
+      }
+    </style>
+  </head>
+
+  <body>
+    Improve your front-end skills by building projects Scan the QR code to visit
+    Frontend Mentor and take your coding skills to the next level
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jeffrey Huang</a>.
+    </div>
+
+    <div class="container">
+      <div class="code-container">
+        <img style="border-radius: 10px" src="images/image-qr-code.png" />
+      </div>
+      <div class="text-container">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
